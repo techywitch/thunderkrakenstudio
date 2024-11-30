@@ -178,30 +178,29 @@ img {
 	border-radius: 50%;
 }
 
-/*.item4 h3 {
-	margin-bottom: 9px;
-	margin-left: 70px;
-	margin-right: 70px;
-	padding: 10px;
+.item4 h4 {
+	margin-top: 10mm;
+	margin-bottom: 2mm;
+	margin-left: 20px;
+	margin-right: 20px;
 	text-align: center;
 }
 
 .item4 p {
-	margin-bottom: 9px;
-	margin-left: 70px;
-	margin-right: 70px;
-	padding: 10px;
-	text-align: center;
+	margin-bottom: 9mm;
+	margin-left: 20px;
+	margin-right: 20px;
+	text-align: left;
 }
 
 .item4 figcaption {
 	display: block;
-	margin-bottom: 9px;
+	margin-top: -5mm;
+	margin-bottom: 2mm;
 	margin-left: 70px;
 	margin-right: 70px;
-	padding: 10px;
 	text-align: center;
-}*/
+}
 
 /*logo area*/
 .item6 {
