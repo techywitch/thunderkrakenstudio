@@ -8,19 +8,14 @@
 </head>
 
 <body>
-  <p class="topp"></p>
-  <header></header>
-  
       <!--location for back to top link at bottom of page-->
 <a class="top"></a>
 
 <div class="wrapper">
-
   <div id="pgcontact">
 
       <!--start grid setup--> 
     <div class="grid-container">
-
         <!--header-->
       <div class="item1">
           <!--navigation bar-->
@@ -41,34 +36,35 @@
 
         <!--main page content-->
       <div class="item3">
-        <h3>header 2</h3>
+        <h3>Contact me with any questions!</h3>
         <h4>Place Holder 3</h4>
           <!--paragraphs on page-->
         <p class="p">place holder 
         </p>
 
-        <form class="grid-container3" action="mailto:gretebrummett@gmail.com">
-            <div class="item2-1">
-                <label for="fname">First name:</label><br>
-                <input type="text" id="fname" name="fname" value="John">
-            </div>
-            <div class="item2-2">
-                <label for="lname">Last name:</label><br>
-                <input type="text" id="lname" name="lname" value="Doe">
-            </div>
-            <div class="item2-3">
-                <label for="fname">First name:</label><br>
-                <input type="text" id="fname" name="fname" value="John">
-            </div>
-            <div class="item2-4">
-                <label for="lname">Last name:</label><br>
-                <input type="text" id="lname" name="lname" value="Doe">
-            </div>
-            <div class="item2-5">
-                <input id="submit" type="submit" value="Submit">
-            </div>
-        </form> 
-
+        <div class="grid-container3" >
+          <form action="mailto:gretebrummett@gmail.com"> <!-- method="post" enctype="text/plain"-->
+              <div class="item2-1">
+                  <label for="fname">First name:</label><br>
+                  <input type="text" id="fname" name="fname">
+              </div>
+              <div class="item2-2">
+                  <label for="lname">Last name:</label><br>
+                  <input type="text" id="lname" name="lname">
+              </div>
+              <div class="item2-3">
+                  <label for="E-mail">E-Mail:</label><br>
+                  <input type="email" id="email" name="email">
+              </div>
+              <div class="item2-4">
+                  <label for="project">Whats your project?:</label><br>
+                  <input type="text" id="project" name="project">
+              </div>
+              <div class="item2-5">
+                  <input id="submit" type="submit" value="send">
+              </div>
+          </form> 
+        </div>
         <p class="p"><a href="blank.com">visable text</a></p>
       </div>
 
@@ -77,7 +73,7 @@
         <footer>
             <!--back to top link-->
           <a href="#top">Back to Top</a>
-          <p class="p"> &copy; 2023, Brummett All Rights Reserved</p>
+          <p class="p"> &copy; 2024, Brummett All Rights Reserved</p>
         </footer>
       </div>
     </div>

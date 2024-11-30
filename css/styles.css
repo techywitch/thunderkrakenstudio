@@ -72,14 +72,12 @@ body {
 	margin: 0;
 }
 
-header {
-	font-size: 0;
-}
 
 /*header area style*/
 .item1 {
 	background-color: rgb(14, 45, 51);
 	padding-right: 2cm;
+	margin-left: -2cm;
 
 }
 
@@ -99,7 +97,7 @@ h2 {
 
 /*content area*/
 .item3 {
-	background-color: rgba(187, 219, 235, 0.8);
+	background-color: rgb(205, 198, 182); /* rgba(187, 219, 235, 0.8)*/
 	/*background-image: url('../imgs/transparent20.png');
 	background-position: static;
 	background-size: contain;
@@ -113,15 +111,15 @@ h3 {
 	color: rgb(0, 0, 0);
 	font-family: 'Times New Roman', Times, serif;
 	font-size: 24pt;
-	margin-bottom: -10px;
-	margin-top: 10px;
-	margin-left: 10px;
+	margin-bottom: -8px;
+	margin-top: 12mm;
+	margin-left: 10mm;
 }
 
 h4 {
 	color: rgb(0, 0, 0);
 	font-family: 'Times New Roman', Times, serif;
-	font-size: 100%;
+	font-size: 16pt;
 	margin-left: 50px;
 }
 
@@ -158,7 +156,7 @@ img {
 }
 
 .item4 {
-	background-color: rgba(187, 219, 235, 0.8);
+	background-color: rgb(205, 198, 182); /*rgba(187, 219, 235, 0.8)*/
 	display: block;
 	max-width: 112mm;
 	margin-right: -0.3mm;
@@ -232,7 +230,6 @@ figcaption {
 /*navigation bar style */
 .item2 {
 	background-color: rgba(14, 45, 51,0.8);
-	margin-right: 2cm;
 	height: 2cm;
 }
 
@@ -241,9 +238,7 @@ figcaption {
 	margin: 3px;
 	overflow: hidden;
 	font-size: 18pt;
-/*border: solid black 1px;*/
-/*position: fixed;
-	right: 0mm;*/
+	justify-self: right;
 }
 
 .topnav li {
@@ -264,7 +259,7 @@ figcaption {
 	font-family: 'Times New Roman', Times, serif;
 	font-size: 100%;
 	text-align: center;
-	padding: 8px 65px;
+	padding: 8px 55px;
 	text-decoration: none;
 	border-radius: 8%;
 }
@@ -337,6 +332,10 @@ figcaption {
 	height: 3.8cm;
 }
 
+#pghome .item3 {
+	min-width: 409mm;
+}
+
 /*Portfolio page specific*/
 #pgport .grid-container {
 	display: grid;
@@ -364,6 +363,8 @@ figcaption {
 .item1-6 {grid-area: block6;}
 .item1-7 {grid-area: block7;}
 .item1-8 {grid-area: block8;}
+.item1-9 {grid-area: block9;}
+.item1-10 {grid-area: block10;}
 
 #pgport .item3 {
 	justify-items: center;
@@ -376,10 +377,14 @@ figcaption {
 .item3 .grid-container2 {
 	display: grid;
 	grid-template-areas: 
-    'block1 block1 block2 block2 block3 block3 block4 block4' 
-    'block1 block1 block2 block2 block3 block3 block4 block4' 
-    'block5 block5 block6 block6 block7 block7 block8 block8' 
-    'block5 block5 block6 block6 block7 block7 block8 block8';
+    'block1 block1 block2 block2 block3 block3' 
+    'block1 block1 block2 block2 block3 block3' 
+	'block4 block4 block5 block5 block6 block6'  
+    'block4 block4 block5 block5 block6 block6' 
+	'block7 block7 block8 block8 block9 block9'
+	'block7 block7 block8 block8 block9 block9'
+	'... ... block10 block10 ... ...' 
+	'... ... block10 block10 ... ...';
 	gap: 1mm;
 /*background-color: rgba(35, 63, 95, 0.8);*/
 	opacity: 100%;
@@ -393,11 +398,28 @@ figcaption {
 	padding: 0mm;
 	margin: 1mm;
 	font-size: 15pt;
-	max-width: 3in;
+	max-width: 5in;
 	min-height: 5in;
 }
 
-.item1-1 figure {
+.grid-container2 div figure {
+	width: auto;
+	height: auto;
+	margin: 0mm;
+	border: 1mm solid black;
+}
+
+.grid-container2 div figure figcaption {
+	text-decoration: underline;
+	font-size: 20pt;
+}
+
+.grid-container2 div figure .p {
+	margin-right: 1mm;
+	margin-left: 1mm;
+}
+
+/*.item1-1 figure {
 	width: auto;
 	height: auto;
 	margin: 0mm;
@@ -453,6 +475,20 @@ figcaption {
 	border: 1mm solid black;
 }
 
+.item1-9 figure {
+	width: auto;
+	height: auto;
+	margin: 0mm;
+	border: 1mm solid black;
+}
+
+.item1-10 figure {
+	width: auto;
+	height: auto;
+	margin: 0mm;
+	border: 1mm solid black;
+}*/
+
 /*Contact specific styles*/
 #pgcontact .grid-container {
 	display: grid;
@@ -495,7 +531,7 @@ figcaption {
 .item2-4 {grid-area: right2;}
 .item2-5 {grid-area: center;}
 
-#pgcontact .item3 .grid-container3 {
+#pgcontact .item3 .grid-container3 form {
 	display: grid;
 	grid-template-areas: 
     'left1 left1 right1 right1'  
@@ -539,9 +575,10 @@ figcaption {
 	border-radius: 8%;
 }
 
-#submit a:hover {
+#pgcontact .grid-container3 div #submit:hover {
 	color: white;
 	background-color: rgba(255, 255, 255, 0.425);
+	cursor: pointer;
 }
 
 .item2-1 {
