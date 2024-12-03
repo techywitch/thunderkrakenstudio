@@ -454,8 +454,9 @@ figcaption {
 #pgcontact h3 {
 	margin: 7mm;
 }
-#pgcontact h4 {
-	margin: 2mm;
+#pgcontact .item3 p {
+	justify-self: center;
+	text-align: center;
 }
 
 #pgcontact .item3 form {
