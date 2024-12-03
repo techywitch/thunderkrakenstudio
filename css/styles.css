@@ -111,7 +111,7 @@ h3 {
 	color: rgb(0, 0, 0);
 	font-family: 'Times New Roman', Times, serif;
 	font-size: 24pt;
-	margin-bottom: -8px;
+	margin-bottom: 4mm;
 	margin-top: 12mm;
 	margin-left: 10mm;
 }
@@ -119,26 +119,28 @@ h3 {
 h4 {
 	color: rgb(0, 0, 0);
 	font-family: 'Times New Roman', Times, serif;
-	font-size: 16pt;
+	font-size: 20pt;
 	margin-left: 50px;
+	margin-bottom: 8mm;
 }
 
 /*over ride site code*/
 p {
 	margin: -6px;
-	padding: 0;
+	padding: 0mm;
 }
 
 /*my paragraphs*/
 .p {
 	color: rgb(5, 5, 5);
 	font-family: 'Times New Roman', Times, serif;
-	font-size: 14pt;
-	padding: 2%;
-	margin-left: 55px;
-	margin-right: 70px;
-	margin-bottom: 1px;
-	margin-top: 1px;
+	font-size: 18pt;
+	padding: 1%;
+	padding-top: 0%;
+	margin-left: 12mm;
+	margin-right: 20mm;
+	margin-bottom: 4mm;
+	margin-top: 1mm;
 	text-align: left;
 }
 
@@ -158,7 +160,7 @@ img {
 .item4 {
 	background-color: rgb(205, 198, 182); /*rgba(187, 219, 235, 0.8)*/
 	display: block;
-	max-width: 112mm;
+	max-width: 101mm;
 	margin-right: -0.3mm;
 }
 
@@ -169,21 +171,25 @@ img {
 	top: 0;
 	margin-top: 2cm;
 	margin-bottom: 10%;
+	margin-left: 2%;
+	margin-right: 2%;
 }
 
 .item4 #profileimg img {
-	max-width: 100mm;
+	max-width: 70mm;
 	height: auto;
 	border: 1mm solid black;
 	border-radius: 50%;
+	justify-self: center;
 }
 
 .item4 h4 {
 	margin-top: 10mm;
 	margin-bottom: 2mm;
-	margin-left: 20px;
-	margin-right: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
 	text-align: center;
+	font-size: 20pt;
 }
 
 .item4 p {
@@ -191,6 +197,7 @@ img {
 	margin-left: 20px;
 	margin-right: 20px;
 	text-align: left;
+	font-size: 16pt;
 }
 
 .item4 figcaption {
@@ -293,16 +300,6 @@ figcaption {
 	color: white;
 }
 
-/*.topnav input[type=text] {
-	float: right;
-	padding: 10px 15px;
-	border: solid black 1px;
-	position: relative;
-	top: 0;
-	margin: 20px;
-	font-size: 17px;
-}*/
-
 /*footer style*/
 .item5 footer {
 	background-color: rgb(14, 45, 51);
@@ -313,12 +310,16 @@ figcaption {
 	color: rgba(187, 219, 235, 0.8);
 	text-align: center;
 	display: block;
+	font-size: 12pt;
 }
 
 .item5 footer p {
 	color: rgb(187, 219, 235, 0.8);
 	text-align: right;
 	display: block;
+	font-size: 12pt;
+	padding: 1mm;
+	margin-right: 1mm;
 }
 
 
@@ -332,7 +333,16 @@ figcaption {
 }
 
 #pghome .item3 {
-	min-width: 409mm;
+	min-width: 100%;
+}
+
+#pghome .item3 #blueandme {
+	width: 8cm;
+	display: block;
+	justify-self: center;
+	float: right;
+	margin-right: 1cm;
+	margin-left: 3mm;
 }
 
 /*Portfolio page specific*/
@@ -396,8 +406,7 @@ figcaption {
 	text-align: left;
 	padding: 0mm;
 	margin: 1mm;
-	font-size: 15pt;
-	max-width: 5in;
+	max-width: 4in;
 	min-height: 5in;
 }
 
@@ -410,83 +419,15 @@ figcaption {
 
 .grid-container2 div figure figcaption {
 	text-decoration: underline;
-	font-size: 20pt;
+	font-size: 16pt;
 }
 
 .grid-container2 div figure .p {
 	margin-right: 1mm;
 	margin-left: 1mm;
+	font-size: 12pt;
 }
 
-/*.item1-1 figure {
-	width: auto;
-	height: auto;
-	margin: 0mm;
-	border: 1mm solid black;
-}
-
-.item1-2 figure {
-	width: auto;
-	height: auto;
-	margin: 0mm;
-	border: 1mm solid black;
-}
-
-.item1-3 figure {
-	width: auto;
-	height: auto;
-	margin: 0mm;
-	border: 1mm solid black;
-}
-
-.item1-4 figure {
-	width: auto;
-	height: auto;
-	margin: 0mm;
-	border: 1mm solid black;
-}
-
-.item1-5 figure {
-	width: auto;
-	height: auto;
-	margin: 0mm;
-	border: 1mm solid black;
-}
-
-.item1-6 figure {
-	width: auto;
-	height: auto;
-	margin: 0mm;
-	border: 1mm solid black;
-}
-
-.item1-7 figure {
-	width: auto;
-	height: auto;
-	margin: 0mm;
-	border: 1mm solid black;
-}
-
-.item1-8 figure {
-	width: auto;
-	height: auto;
-	margin: 0mm;
-	border: 1mm solid black;
-}
-
-.item1-9 figure {
-	width: auto;
-	height: auto;
-	margin: 0mm;
-	border: 1mm solid black;
-}
-
-.item1-10 figure {
-	width: auto;
-	height: auto;
-	margin: 0mm;
-	border: 1mm solid black;
-}*/
 
 /*Contact specific styles*/
 #pgcontact .grid-container {
@@ -511,43 +452,44 @@ figcaption {
 	justify-items: center;
 }
 #pgcontact h3 {
-	margin: 0mm
+	margin: 7mm;
 }
 #pgcontact h4 {
-	margin: 0mm
+	margin: 2mm;
 }
 
 #pgcontact .item3 form {
 	justify-content: center;
 	max-width: min-content;	
-	display: block;
 }
 
 /*start grid setup3*/
 .item2-1 {grid-area: left1;}
 .item2-2 {grid-area: right1;}
-.item2-3 {grid-area: left2;}
-.item2-4 {grid-area: right2;}
-.item2-5 {grid-area: center;}
+.item2-3 {grid-area: row;}
+.item2-4 {grid-area: row2;}
+.item2-5 {grid-area: row3;}
+#submit {grid-area: center;}
 
 #pgcontact .item3 .grid-container3 form {
 	display: grid;
 	grid-template-areas: 
-    'left1 left1 right1 right1'  
     'left1 left1 right1 right1' 
-	'left2 left2 right2 right2' 
-	'left2 left2 right2 right2'
+	'row row row row'
+	'row2 row2 row2 row2'
+	'row3 row3 row3 row3'
 	'center center center center';
-	gap: 1mm;
+	gap: 2mm;
 /*background-color: rgba(35, 63, 95, 0.8);*/
 	opacity: 100%;
 	padding: 0mm;
 	margin: 0mm;
+	margin-top: 9mm;
 }
 
 #pgcontact .grid-container3 div {
 	/*background-color: rgba(187, 219, 235, 0.8);*/
-		display: block;
+		display: inline-block;
 		text-align: left;
 		padding: 1mm;
 		margin: 1mm;
@@ -558,13 +500,18 @@ figcaption {
 	padding: 0mm;
 	font-size: 16pt;
 }
+
+
 #pgcontact .grid-container3 div input {
 	margin: 1mm;
-	padding: 0mm;
+	padding: 1mm;
 	font-size: 14pt;
+	border: solid 1px #ccc;
+	border-radius: 4px;
+
 }
-#pgcontact .grid-container3 div #submit {
-	display: block;
+#pgcontact .grid-container3 #submit {
+	/*display: block;*/
 	justify-self: center;
 	background-color: rgb(14, 45, 51);
 	color: rgba(187, 219, 235, 0.8);
@@ -572,20 +519,73 @@ figcaption {
 	text-align: center;
 	padding: 6px 25px;
 	border-radius: 8%;
+	margin-bottom: 4mm;
 }
 
-#pgcontact .grid-container3 div #submit:hover {
+#pgcontact .grid-container3 #submit:hover {
 	color: white;
 	background-color: rgba(255, 255, 255, 0.425);
 	cursor: pointer;
 }
 
-.item2-1 {
-	max-width: min-content;
-	max-height: min-content;
-}
-.item2-2 {
-	max-width: min-content;
-	max-height: min-content;
+.item2-3 {
+	justify-self: center;
 }
 
+.item2-4 input {
+	justify-self: center;
+	/*height: 45mm;*/
+	width: 100%;
+	box-sizing: border-box;
+	resize: vertical;
+}
+
+.item2-5 input {
+	justify-self: center;
+	/*min-height: 45mm;*/
+	width:100%;
+	box-sizing: border-box;
+	resize: vertical;	
+}
+
+
+/*Projects specific */
+#pgprojects .grid-container {
+	display: grid;
+	grid-template-areas: 
+	'logoleft header header header header header' 
+	'logoleft topnav topnav topnav topnav topnav' 
+	'main main main main main main' 
+	'footer footer footer footer footer footer';
+	gap: 1px;
+	background-color: rgba(35, 63, 95, 0.8);
+	opacity: 100%;
+	padding: 2px;
+}
+
+#pgprojects .item1 {
+	height: 3.8cm;
+}
+
+#pgprojects .item3 {
+	min-width: 100%;
+	justify-items: center;
+}
+#pgprojects h3 {
+	margin: 7mm;
+}
+#pgprojects h4 {
+	margin: 2mm;
+}
+
+#pgprojects .item3 form {
+	justify-content: center;
+	max-width: min-content;	
+}
+
+#pgprojects .item5 {
+	display: block;
+	position: absolute;
+	bottom: 0mm;
+	width: 100%;
+}
