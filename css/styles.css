@@ -368,6 +368,11 @@ figcaption {
 	margin-right: 1cm;
 	margin-left: 3mm;
 }
+
+#pghome .item3 #blueandme img {
+	border-radius: 6%;
+}
+
 #pghome .scroll-container::-webkit-scrollbar-track {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	border-radius: 10px;
